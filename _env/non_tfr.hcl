@@ -1,3 +1,8 @@
 terraform {
-  source = "git::https://github.com/Azure/terraform-azurerm-avm-res-network-virtualnetwork.git?ref=v0.3.0"
+  source = "git@github.com:updatecli-test/${local.module}.git//?ref=${local.version}"
+}
+
+locals {
+  module = "jenkins-infra-aws"
+  version = "terragrunt"
 }
